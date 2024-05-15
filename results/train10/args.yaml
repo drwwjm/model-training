@@ -1,11 +1,11 @@
 task: detect
 mode: train
-model: yolov8l.pt
+model: yolov8m.pt
 data: D:\DRIVE\TUP Files\4A\Thesis\model\yolo\data.yaml
 epochs: 100
 time: null
 patience: 100
-batch: 2
+batch: 4
 imgsz: 640
 save: true
 save_period: -1
@@ -13,7 +13,7 @@ cache: false
 device: 0
 workers: 0
 project: D:\DRIVE\TUP Files\4A\Thesis\model\yolo\results
-name: train3
+name: train10
 exist_ok: false
 pretrained: true
 optimizer: auto
@@ -103,4 +103,4 @@ erasing: 0.4
 crop_fraction: 1.0
 cfg: null
 tracker: botsort.yaml
-save_dir: D:\DRIVE\TUP Files\4A\Thesis\model\yolo\results\train3
+save_dir: D:\DRIVE\TUP Files\4A\Thesis\model\yolo\results\train10
